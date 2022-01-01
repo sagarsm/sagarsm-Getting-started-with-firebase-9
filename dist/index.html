@@ -6,25 +6,74 @@
   <title>Firebase 9</title>
 </head>
 <body>
-  <h1>Getting Started with Firebase 9</h1>
+  <h1>News Paper Management System</h1>
+<div>
+  <h2>Exisitng User Signin</h2>
+  <form class="login">
+    <label for="email">email:</label>
+    <input type="email" name="email" required>
+    <label for="password">password:</label>
+    <input type="password" name="password" required>
+    <div>
+    <button>login</button>
+    </div>
+  </form>
+</div>
 
-  <h2>Firebase Firestore</h2>
+  <button class="logout">logout</button>
+
+  <h2>Customer Information</h2>
 
   <form class="add">
-    <label for="title">Title:</label>
-    <input type="text" name="title" required>
-    <label for="author">Author:</label>
-    <input type="text" name="author" required>
-    
-    <button>add a new book</button>
+    <label for="customerName">Name</label>
+    <input type="text" name="customerName" required>
+    <p><label for="address">Address</label></p>
+  <div>
+    <label for="addressLine1">AddressLine1</label>
+    <input type="text" name="addressLine1" required>
+    <label for="addressLine2">AddressLine2</label>
+    <input type="text" name="addressLine2" required>
+  </div>
+  <p></p>
+  <div>
+    <label for="city">City</label>
+    <input type="text" name="city" required>
+    <label for="state">State</label>
+    <input type="text" name="state" required>
+    <label for="pinCode">PinCode</label>
+    <input type="text" name="pinCode" required>
+  </div>
+  <p></p>  
+    <button>add a new customer</button>
   </form>
-
+<h2>Delete Customer</h2>
   <form class="delete">
     <label for="id">Document id:</label>
     <input type="text" name="id" required>
 
-    <button>delete a book</button>
+    <button>delete a customer</button>
   </form>
+<h2>Update Customer</h2>
+  <form class="update">
+    <label for="id">Document id:</label>
+    <input type="text" name="id" required>
+  
+    <button>update a customer</button>
+  </form>
+<h2>Signup as new user</h2>
+<form class="signup">
+  <label for="email">email:</label>
+  <input type="email" name="email" required>
+  <label for="password">password:</label>
+  <input type="password" name="password" required>
+
+  <button>signup</button>
+</form>
+
+<h2>Unsubscribe from Firebase Services Auth/DB (admin use only)</h2>
+
+<button class="unsubscribe">unsubscribe</button>
+
 
   <script src="bundle.js"></script>
 </body>
